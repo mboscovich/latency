@@ -3,7 +3,7 @@ import Adw from 'gi://Adw';
 import Gtk from 'gi://Gtk';
 import Gdk from 'gi://Gdk';
 
-import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/shell/extensions/prefs.js';
+import {ExtensionPreferences, gettext as _} from 'resource:///org/gnome/Shell/Extensions/js/extensions/prefs.js'
 
 const DEFAULT_WAN_IP         = '8.8.8.8';
 const DEFAULT_RESOLVE_DOMAIN = 'google.com';
