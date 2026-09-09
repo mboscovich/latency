@@ -3,5 +3,3 @@ schemas/gschemas.compiled
 .idea
 dist/
 latency.zip
-latency-gnome43.zip
-latency-gnome45.zip

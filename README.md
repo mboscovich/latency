@@ -24,19 +24,17 @@ A GNOME Shell extension that displays internet latency (ping) in the top panel. 
 
 | GNOME version | Supported |
 |---|---|
-| 43, 44 | Yes |
 | 45, 46, 47, 48, 49, 50 | Yes |
 
 ## Prerequisites
 
 Before building and installing this extension, make sure you have the following installed:
 
-- GNOME Shell 43 or later
+- GNOME Shell 45 or later
 - `glib-compile-schemas` (part of `glib2-devel` or `libglib2.0-dev`)
 - `make`
 - `ping`
 - `host` (for DNS checking)
-- `python3` (used by the build system to generate distribution ZIPs)
 
 ### Installing prerequisites
 
@@ -63,7 +61,7 @@ cd latency
 make install
 ```
 
-`make install` automatically detects your GNOME Shell version and installs the appropriate files.
+This copies the extension into `~/.local/share/gnome-shell/extensions/`.
 
 After installing:
 
@@ -132,11 +130,9 @@ Once installed and enabled, the extension shows in the panel and updates at the 
 | Target | Description |
 |---|---|
 | `make build` | Compile schemas and prepare the extension |
-| `make install` | Install for the current GNOME version (auto-detected) |
+| `make install` | Install the extension locally |
 | `make uninstall` | Remove the extension |
-| `make zip-gnome43` | Build ZIP for GNOME 43/44 (for extensions.gnome.org) |
-| `make zip-gnome45` | Build ZIP for GNOME 45+ (for extensions.gnome.org) |
-| `make zip-all` | Build both ZIPs |
+| `make zip` | Build ZIP for extensions.gnome.org |
 | `make clean` | Remove build artifacts and ZIPs |
 | `make check-deps` | Verify all required tools are installed |
 
